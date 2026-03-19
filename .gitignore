@@ -1,0 +1,28 @@
+# 环境变量文件
+.env
+
+# 日志文件
+*.log
+
+# Python缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 报告输出文件（可根据需求调整）
+report.json
+
+#输出过程数据
+data/
+
+# 虚拟环境
+venv/
+env/
+*.env
+
+# IDE配置
+.idea/
+.vscode/
+*.swp
+*.swo
