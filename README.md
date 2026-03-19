@@ -5,17 +5,15 @@
 ## 项目目录结构
 
 remote-stack-monitor/
-├── .env.example          # 环境变量示例文件
-├── .gitignore            # Git忽略文件
-├── README.md             # 项目说明文档
-├── requirements.txt      # 依赖库清单
-├── config.py             # 配置管理
-├── ssh_client.py         # SSH客户端封装
-├── analyzer.py           # 栈分析器
-├── reporter.py           # 报告生成器
-├── main.py               # 主程序
-└── report.json           # 示例报告（最终检测报告）
-└──data/                  # 中间抓取的数据                         
+1. .gitignore            # Git忽略文件
+2. README.md             # 项目说明文档
+3. requirements.txt      # 依赖库清单
+4. config.py             # 配置管理
+5. ssh_client.py         # SSH客户端封装
+6. analyzer.py           # 栈分析器
+7. reporter.py           # 报告生成器
+8. main.py               # 主程序
+9.  report.json           # 示例报告（最终检测报告）                         
 
 ## 功能特性
 - 远程获取进程栈内存数据；
@@ -36,4 +34,4 @@ cd StackSentinel
 pip install -r requirements.txt
 
 # 执行程序
-python main.py --host <目标服务器ip> --port 22 --user <目标服务器用户名> --password <目标服务器登录密码> --pid <目标进程>
+python main.py --host <目标服务器ip> --port <端口号> --user <目标服务器用户名> --password <目标服务器登录密码> --pid <目标进程>
